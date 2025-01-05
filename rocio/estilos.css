@@ -101,18 +101,29 @@ header {
 #caja_lista {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
 }
-.elementos_lista {
+.elemento_lista {
     margin-left: 1rem;
     cursor: pointer;
     transition: color 0.3s;
+    list-style: none;
 }
-.elementos_lista:hover {
-    color: #00d3b0a4;
+.elemento_lista>a:hover {
+    color: #0cddbaa4;
 }
 #titulo{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
+}
+
+
+.elemento_lista>a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
 }

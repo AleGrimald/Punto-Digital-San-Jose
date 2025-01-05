@@ -123,65 +123,166 @@ body{
 
 .footer{
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(28, 112, 208, 0.803);
-
-    position: relative;
-}
-.contenedor_redes,.contenedor_logo,.contenedor_titulo{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.contenedor_redes{
-    justify-content: flex-end;
-    gap: 20px;
 }
 .contenedor_logo{
-    justify-content: flex-start;
-}
-.contenedor_titulo{
-    justify-content: center;
-}
-
-.logo_footer_a{
+    width: 50%;
     height: 100%;
-    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .logo_footer_img{
-    width: 100%;
-    height: 100%;
-}
-
-.red_social{
-    width: 50px;
-    height: 50px;
+    width: 90px;
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
-.red_social:hover, .logo_img:hover{
+.logo_footer_h2{
+    color: white;
+}
+
+
+.contenedor_h2_redes{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tiutlo_h2{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.contenedor_redes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.red_social{
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white;
+}
+.red_social:hover{
     box-shadow: 0 0 10px 3px white;
 }
 
-.tiutlo_h2{
-    padding: .5rem 1rem;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
 
+/* Media Query para Samsung A03 y superiores */
+@media screen and (max-width: 720px) {
+    .header{
+        flex-flow: column wrap;
+        padding: .5rem 0;
+    }
+    .logo_header_a{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_header_img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo_titulo{
+        width: 100%;
+    }
+    .titulo_h1{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /*MAIN*/
+    .contenedor_principal{
+        padding: .5rem;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .contenedor_alumno{
+        width: 70%;
+        height: 270px;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    
+    .alumno_nombre_img{
+        height: 60%;
+    }
+    
+    .imagen{
+        width: 128px;
+        height: 128px;
+    }
+    .nombre{
+        font-size: 16px;
+    }
+    
+    .alumno_proyecto{
+        height: 30%;
+    }
+    .proyecto_btn_a{
+        padding: .4rem 1.2rem;
+        font-size: 16px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgba(0, 0, 0, 0.7);
+    }
+
+
+    /*FOOTER*/
+    .footer{
+        height: auto;
+        padding: 1rem 0;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+    .contenedor_h2_redes{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .contenedor_redes,.contenedor_logo{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .contenedor_redes{
+        gap: 20px;
+    }
+    
+    .logo_footer_img{
+        height: 64px;
+        width: 64px;
+    }
+    
+    .red_social{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .tiutlo_h2{
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    
+    }
+
+    .logo_footer_h2{
+        font-size: 20px;
+    }
 }
 
-.link_contacto{
-    color: white;
-    text-decoration: none;
-    transition: all .6s;
-
-}
-.link_contacto:hover{
-    transform: scale(1.2);
-}
