@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header id="encabezado">
+
+        <div id="caja_logo">
+            <img id="imagen_logo" src="data:image/png;base64,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" alt="" srcset="">
+            
+            <h1 id="titulo_logo" >Skibidi</h1>
+        </div>
+    
+        <ul id="caja_lista">
+            <li class="elemento_lista"><a href="../index.html">INICIO</a></li>
+            <li class="elemento_lista"><a href="#buenos">BUENOS</a></li>
+            <li class="elemento_lista"><a href="#malos">MALOS</a></li>
+            <li class="elemento_lista"><a href="#aliados">ALIADOS</a></li>
+        </ul>
+    </header> 
+
+    <main>  
+
+        <div id="buenos" class="container_buenos">
+            <h2 class="caracteristicas_h2">Heroes de Skibidi</h2>    
+            <div class="card">
+                <h3>Titan tv</h3>
+                <img src="./titan tv.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>lus roja: es una abilidad que ase que los enemigos se destruyan</li>
+                    <li>espada: la espada le sirbe para pele cuerpo a cuerpo</li>
+                    <li>teletransportasion: la teletrasportasion le sirves para poder ir a otros lugares</li> 
+                    <li>tiene unas garas regractiles en la mano</li>
+                    <li>i tanbien tiene unos laseres el la espalda para disprar</li>
+                    <li>tiene cuatro televisione extras </li>   
+                </ol>
+            </div>
+    
+            <div class="card">
+                <h3>Titan camara</h3>
+                <img src="./titan camara.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>espada de magma: es muy utila para peleas cuerpo a cuerpo como la del titan tv</li>
+                    <li>escudo: el escudo sirbe para evitar ataque de maximo nivel y evita que resiva daño</li>
+                    <li>cañones del ombro: sirbe para poder aser mas deño a sus enemigos</li>
+                </ol>
+            </div>
+    
+            <div class="card">
+                <h3>Titan spekerman</h3>
+                <img src="./titan spekerman.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>bosinas: le sirbe para aser sonidos muy fuertes que aturden a sus enemigos</li>
+                    <li>tiene una gitara que ase un sonido dos veses mas potente</li>
+                    <li>tiene unos cañones que usa para disparar y dañar a los oponentes</li>
+                </ol>
+            </div>
+    
+            <div class="card">
+                <h3>Titan drill man dragon</h3>
+                <img src="./titan drill man dragon.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>puede volar asi tiene ventaja en el aire</li>
+                    <li>las alas pueden lanzar rayos laser para poder derrotar mas rapido a su enemigo</li>
+                    <li>es muy resistente a altas temperaturas y asi puede ser mas poderoso</li>
+                </ol>
+            </div>
+    
+            <div class="card">
+                <h3>Titan clock man</h3>
+                <img src="./titan clock.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>poder volver el tiempo para curar a los que ya an muerto</li>
+                    <li>poder detener el tiempo asi para detener a los enemigos</li>
+                    <li>tiene una espada que le sirve en una pelea cuerpo a cuerpo</li>
+                </ol>
+            </div>
+    
+            <div class="card">
+                <h3>Titana lapiz woman</h3>
+                <img src="./titana lapiz womam.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>puede dibujar cualquier cosa puede aser sus armas y curarse partes del cuerpo</li>
+                    <li>los tentaculos pueden crear copias de los titanes originales</li>
+                </ol>
+            </div>
+            
+
+        </div>
+
+        <div id="aliados" class="contenedor_aliados_futuro">
+            <h2 class="caracteristicas_h2">Aliados del Futuro</h2>
+            <div class="card">
+                <h3>Large clocman del futuro</h3>
+                <img src="./Future_Large_Clockman.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>puede crear clones de energia para capturara a sus oponentes</li>
+                    <li>tiene una velocidad extrema</li>
+                    <li>puede rebirse el mismo</li>
+                    <li>puede biajar en el tiempo y puede biajar a otros universos </li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>SR.CLOKCMAN</h3>
+                <img src="./sr.clockman.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>poder revivir a enemigo muertos</li>
+                    <li>poeder camviar de forma transformarse en otros personajes</li>
+                    <li>poder crear un portal para viajar en el tiempo</li>
+                    
+                </ol>
+            </div>
+        </div>
+
+        
+
+        <div id="malos" class="container_malos">
+            <h2 class="caracteristicas_h2">Enmigos de Skibidi</h2>
+            <div class="card">
+                <h3>Contra titan</h3>
+                <img src="https://th.bing.com/th/id/OIP.OQ9DQhXoRuOoExP93W0n1QHaNK?rs=1&pid=ImgDetMain" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>Copiar: puede copiar armas de los onentes que toca</li>
+                    <li>Teletransportasion: puede teletrasportarse a larga distansia</li>
+                    <li>Regenerasion: puede regenerarde partes del cuerpo que fueron dañadas asta la cavesa</li>
+                </ol> 
+            </div>
+    
+            <div class="card">
+                <h3>Gman apocalipsis</h3>
+                <img src="./gman apocalipsis.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>espada: la espada tiene el poder para destruir una base emtera</li>
+                    <li>ataque del nuclio: el ataque del nuclio destruiria una ciudad entera</li>
+                    <li>cañon de la boca: el cañon de la permite dar un ataque muy detructor</li>
+                    <li>puede sacar a unos gman rojos para que ataquen al enemigo</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Espectro</h3>
+                <img src="./WraithTitanRenderDOM.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>aserse como un fntsma para no resibir daño</li>
+                    <li> lansa raños laser lara dañar asus enemigos</li>
+                    <li>tiene una fuerza descomunal en una pelea cuerpo a cuerpo</li>
+                    <li>tanvien puede lansar raños de sus patas de arñas de su espalda</li>
+                </ol>
+            </div>
+
+            
+            <div class="card">
+                <h3>El dios del tiempo</h3>
+                <img src="./el dios del tiempo.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>puede detener todo el tiempo y la galacxia</li>
+                    <li>puede cacar una espada de la mano que le cortaron</li>
+                    <li>puede ase avujeros negros </li>
+                    <li> y puede telecrasportarse a otros universos</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>CIENTIFICO TOILET</h3>
+                <img src="./CIENTIFICO TOILET.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>CAÑONES DE ASIDO con ese cañon puede dañar de crabedad a su rival</li>
+                    <li>CAÑONES laser son iguales al del gman pero mas potentes</li>
+                    <li>tiene piernas roboticas oara poder caminar</li>
+                    <li>tiene otor cañon derespueto por si pierde el otro</li>
+                    <li>tiene dos escudos para crotergerse</li>
+                    <li>tiene dos bosinas en la parte de adelante</li>
+                </ol>
+            </div>
+            <div class="card">
+                <h3>hibrido policia</h3>
+                <img src="./hibrido policia.webp" alt="">
+                <h4>Habilidades:</h4>
+                <ol>
+                    <li>ciene cuatro lansa misiles para disparar</li>
+                    <li>tiene un escudo de policia para crotegerse</li>
+                    <li>tiene una guandaña como arma de pelea cuerpo a cuerpo</li>
+                
+                </ol>
+            </div>
+
+        </div>
+    </main>
+
+    
+
+        
+
+        
+</body>
+</html>
+                
